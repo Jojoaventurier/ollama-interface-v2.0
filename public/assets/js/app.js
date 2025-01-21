@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log('hello');
   
     // Fetch and display available models
-    fetch("/api/models.php")
+    fetch("/ollama-interface-v2.0/public/api/models.php")
       .then((res) => res.json())
       .then((models) => {
         modelSelect.innerHTML = models.map(
